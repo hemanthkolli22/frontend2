@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:5000/api/admin" });
+const API = axios.create({ baseURL: "https://backend2-fid2.onrender.com/admin" });
 
 // Attach token
 API.interceptors.request.use((req) => {
