@@ -9,7 +9,7 @@ export default function AdminApplications() {
   const loadApplications = async () => {
     try {
       const token = localStorage.getItem("token");
-      const { data } = await axios.get("http://localhost:5000/api/admin/applications", {
+      const { data } = await axios.get("https://backend2-fid2.onrender.com/applications", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setApplications(data.applications || []);
