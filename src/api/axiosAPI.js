@@ -3,7 +3,7 @@ import axios from "axios";
 
 // ✅ Create axios instance
 const API = axios.create({
-  baseURL:  "https://backend2-fid2.onrender.com",
+  baseURL: "https://backend2-fid2.onrender.com/api", // 👈 added /api
   withCredentials: false, // we handle token manually
 });
 
