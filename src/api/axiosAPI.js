@@ -3,7 +3,7 @@ import axios from "axios";
 
 // ✅ Create axios instance
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://backend2-fid2.onrender.com",
   withCredentials: false, // we handle token manually
 });
 
