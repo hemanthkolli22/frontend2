@@ -1,7 +1,7 @@
 // src/api/applicationsAPI.js
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:5000/api/applications" });
+const API = axios.create({ baseURL: "https://backend2-fid2.onrender.com/applications" });
 
 // 🔑 Attach token to every request
 API.interceptors.request.use((req) => {
