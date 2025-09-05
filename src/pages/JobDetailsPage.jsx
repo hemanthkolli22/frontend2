@@ -19,7 +19,7 @@ export default function JobDetailsPage() {
     const fetchJobDetails = async () => {
       try {
         const res = await axios.get(
-          `${import.meta.env.VITE_API_BASE_URL}/jobs/${id}`
+          `"https://backend2-fid2.onrender.com/jobs/${id}`
         );
         setJob(res.data.data);
       } catch (err) {
